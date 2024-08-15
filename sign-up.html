@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: white;
+        }
+
+        body {
+            margin: 0;
+            background-image: url("tree_bg.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        main {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-image: linear-gradient(60deg, #080a18 15%, transparent);
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            background-color: #313442;
+            border: none;
+            padding: 10px 0 10px 8px;
+            border-radius: 10px;
+        }
+
+        input:focus-visible {
+            background-color: #313442;
+            outline: none;
+            box-shadow: 0px 0px 10px #1b8aeb;
+        }
+        
+        .input-name {
+            display: flex;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            margin-top: 40px;
+            background-color: #1b8aeb;
+            border: none;
+            padding: 10px 0 10px 0;
+            border-radius: 20px;
+            width: 50%;
+        }
+        .btn:hover {
+            box-shadow: 0px 0px 15px #1b8aeb;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        a {
+            color: #1b8aeb;
+        }
+
+        a:hover {
+            text-shadow: 0px 0px 5px #1b8aeb;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Create an account</h1>
+            <p>Already a member? <a href=#>Log-In</a></p>
+
+            <form class="form-container">
+                <div class="input-name">
+
+                    <div style="margin-right: 10px;">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="John">
+                    </div>
+
+                    <div>
+                        <label for="lasttName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Doe">
+                    </div>
+
+                </div>
+
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="johndoe@example.com">
+
+
+                <label for="password">Password</label>
+                <input type="password" id="password">
+
+                <div class="btn-container">
+                    <button class="btn">Create account</button>
+                </div>
+
+            </form>
+        </div>
+        <div>&nbsp;</div>
+    </main>
+</body>
+
+</html>
