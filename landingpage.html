@@ -6,11 +6,10 @@
     <title>Landing Page</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-
+    
     <style>
         * {
             font-family: Montserrat;
-            color: white;
         }
         body {
             margin: 0;
@@ -24,8 +23,8 @@
             justify-content: center;
             padding: 0 18%;
             text-align: center;
-            background-image: url('https://cdn.wallpapersafari.com/64/32/q14BOu.jpg');
-            background-position: left;
+            background-image: url('https://wallpapers.com/images/hd/minimalist-background-o4thunr26czh1ln5.jpg');
+            background-position: bottom;
         }
         .hero-title {
             font-size: 50px;
@@ -46,12 +45,60 @@
             border: 2px solid blueviolet;
             color: blueviolet;
         }
+        .feature-section {
+            padding: 100px 200px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card {
+            /* border: 2px solid red; */
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            color: #3f3367;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px 0 #00000077;
+            transition-duration: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+            background-color: #3f3367;
+            color: white;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        .services-section {
+            /* border: 2px solid red; */
+            padding: 100px 200px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .service-img {
+            border: 2px solid blue;
+        }
+        .service-img img {
+            width: 100%;
+        }
+        .service-info { 
+            border: 2px solid green;
+        }
     </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     
     <main>
         <section class="hero-section">
+            
             <h1 class="hero-title">Welcome to Website</h1>
             <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit quis nemo inventore voluptas! Odit obcaecati officia architecto, nostrum sed rerum cum explicabo vel, sapiente qui veniam amet ut tempore.</p>
             
@@ -61,6 +108,48 @@
             </div>
 
         </section>
+        
+        <section class="feature-section">
+            
+            <h1 class="section-title">Our Features</h1>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-4x"></i>
+                    <h2>Fast Solution</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sint aperiam accusantium officiis eligendi corrupti dolor! Consectetur at sapiente quas.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-4x"></i>
+                    <h2>Fast Solution</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sint aperiam accusantium officiis eligendi corrupti dolor! Consectetur at sapiente quas.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-4x"></i>
+                    <h2>Fast Solution</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sint aperiam accusantium officiis eligendi corrupti dolor! Consectetur at sapiente quas.</p>
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="services-section">
+
+            <div class="service-img">
+                <img src="https://img.freepik.com/free-vector/organic-flat-customer-support-illustration_23-2148899174.jpg" alt="">
+            </div>
+
+            <div class="service-info">
+                <h3>Service Title 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, tenetur? Minima debitis non quisquam rem numquam aliquid accusantium, atque consectetur!</p>
+                <button class="btn primary-btn">Learn More</button>
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
