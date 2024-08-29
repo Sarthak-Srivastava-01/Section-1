@@ -39,3 +39,9 @@ if (num2 % 2 == 0) {
 } else {
     console.log("It's Odd")
 }
+
+console.log("\n")
+
+let a = 20
+let result = (a>=18) ? "You are eligible" : "You are not eligible"
+console.log(result)
