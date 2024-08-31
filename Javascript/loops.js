@@ -79,3 +79,24 @@ console.log("--------------------")
 for (let fruit of fruits) {
     console.log(fruit)
 }
+
+console.log("----------------------")
+
+for(let num = 10; num <= 50 ; num++) {
+    if(num % 7 === 0) {
+        console.log(num , "is divisible by 7")
+    }
+}
+
+console.log("----------------------")
+
+let b = 10;
+do {
+    console.log(b);
+    b++;
+} while(b > 20)
+
+console.log("----------------------")
+
+console.log( '1' == 1);
+console.log( '1' === 1);
