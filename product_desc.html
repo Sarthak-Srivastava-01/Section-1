@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Revuelto</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: Montserrat;
+        }
+        body {
+            margin: 0;
+            background-color: black;
+        }
+        main {
+            padding: 100px;
+        }
+        .text-gold {
+            color: #ffb500;
+            /* color: #d8a016; */
+        }
+        .product-container {
+            padding: 50px;
+            border: 1px solid white;
+            /* box-shadow: 1px 1px 4px black; */
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .image-container {
+            padding: 30px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-description {
+            color: white;
+            padding-left: 40px;
+        }
+        .specs-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .specs-container p {
+            line-height: 1.5;
+        }
+        .color-container {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .color-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid white;
+            margin-right: 10px;
+            transition: .5s;
+        }
+        .color-circle:hover {
+            transform: scale(1.5);
+        }
+        .price-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+        .create-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            transition: .5s;
+        }
+        .create-btn:hover {
+            gap: 4px;
+            text-decoration: none;
+            color: #ffb500;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="product-container">
+            <div class="image-container">
+                <img src="Revuelto.webp" alt="Lamborghini Revuelto" style="max-width: 500px;">
+            </div>
+            <div class="product-description">
+                <h2 class="text-gold">Lamborghini Revuelto</h2>
+                <h5 style="line-height: 1.5;">The Lamborghini Revuelto is the latest evolution in Lamborghini's legacy of high-performance supercars, blending cutting-edge technology with iconic design. With an aggressive stance and aerodynamic lines, the Revuelto is crafted for those who demand both style and substance.</h5>
+                <div class="specs-container">
+                    <p><b class="text-gold" style="margin-bottom: 10px;">Engine</b> <br> Naturally Aspirated V12</p>
+                    <p><b class="text-gold">Horse Power</b> <br> 820 HP</p>
+                    <p><b class="text-gold">0-100 km/h</b> <br> 2.5 seconds</p>
+                    <p><b class="text-gold">top speed</b> <br> 350 kmph+</p>
+                </div>
+                <div style="margin-top: 10px;">
+                    <b class="text-gold">Colors</b>
+                    <div class="color-container">
+                        <div class="color-circle" style="background-color: #df6900;"></div>
+                        <div class="color-circle" style="background-color: #585959;"></div>
+                        <div class="color-circle" style="background-color: #001c56;"></div>
+                        <div class="color-circle" style="background-color: #000;"></div>
+                        <div class="color-circle" style="background-color: #980f15;"></div>
+                        <div>+ 11 more</div>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div>
+                        <b class="text-gold">Price</b>
+                        <p style="margin-top: 5px;"><small>starts at</small><b class="text-gold"> $608,358</b></p>
+                    </div>
+                    <a href="#" class="create-btn"><i class="fa-solid fa-chevron-right" style="color: #ffb500;"></i> Create your Revuelto</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
