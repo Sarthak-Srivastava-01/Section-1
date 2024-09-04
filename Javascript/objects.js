@@ -132,3 +132,19 @@ const samsung_phone = smartphoneArray.filter((phone) => {
 });
 console.log(samsung_phone);
 
+console.log("----------------------")
+
+const brands = smartphoneArray.map((phone) => {
+    return phone.brand;
+});
+console.log(new Set(brands));
+console.log(Array.from(new Set(brands)));
+
+console.log("----------------------")
+
+const formatedPhones = smartphoneArray.map((phone) => {
+    // return phone.brand + " " + phone.model + " - ₹" + phone.price;
+    return `${phone.brand} ${phone.model} - ₹${phone.price}`; // GTemplate literals or interpolated string
+});
+console.log(formatedPhones);
+
