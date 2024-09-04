@@ -238,3 +238,8 @@ const prod_brand = products.filter((product) => {
     return product.brand.toLowerCase().includes(brand.toLowerCase());
 });
 console.log(prod_brand);
+
+const sorted = products.sort((prod1, prod2) => {
+    return prod1.price - prod2.price
+});
+console.log(sorted);
